@@ -48,6 +48,6 @@ Array.from(labels).forEach((label) => {
     })
 
     exactInput.addEventListener('blur' , () => {
-        label.classList.remove('upper');
+        label.classList.add('upper');
     })
 })
