@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Comfyyy</title>
+</head>
+<body>
+    <!---------------------------------------------------------------------------------------------->
+    <!--------------------------------------- NavBar Started --------------------------------------->
+    <!---------------------------------------------------------------------------------------------->
+
+
+    <nav class="nav-bar" id="home">
+        <h1 class="main-heading">
+            <i class="fa-brands fa-pied-piper-alt"></i>
+            Comfyyy
+        </h1>
+        <ul class="list" id="list1">
+            <li class="list-items"><a href="#home">Home</a></li>
+            <li class="list-items"><a href="#shop">Shop</a></li>
+            <li class="list-items"><a href="#about">About</a></li>
+            <li class="list-items"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+            <i class="fa-solid fa-bars" id="bars"></i>
+            <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
+            <span class="notification" id="notification">0</span>
+        </div>
+    </nav>
+
+    <!---------------------------------------------------------------------------------------------->
+    <!--------------------------------------- NavBar Completed ------------------------------------->
+    <!---------------------------------------------------------------------------------------------->
+
+
+
+    <!---------------------------------------------------------------------------------------------->
+    <!--------------------------------------- SearchBox Started ------------------------------------>
+    <!---------------------------------------------------------------------------------------------->
+
+    <div class="search-container">
+        <h1 class="heading">All Products</h1>
+        <div class="search-div">
+            <input type="text" id="search-area" placeholder="Find Items ..">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------------------------------->
+    <!--------------------------------------- SearchBox Completed ---------------------------------->
+    <!---------------------------------------------------------------------------------------------->
+
+
+
+
+    <!---------------------------------------------------------------------------------------------->
+    <!--------------------------------------- SidePanel Started  ----------------------------------->
+    <!---------------------------------------------------------------------------------------------->
+
+    <div class="main-side-panel" id="side-panel">
+        <i class="fa-solid fa-xmark" id="close-btn"></i>
+        <div class="content">
+            <h1 class="panel-main-heading">Your Cart</h1>
+            <div class="cart-container" id="cartContainer">               
+            </div>
+            <p class="bill">Total : $ <span id="total-bill">0</span></p>
+            <button class="checkout">Checkout</button>
+        </div>
+    </div>
+
+
+    <!---------------------------------------------------------------------------------------------->
+    <!--------------------------------------- SidePanel Completed  --------------------------------->
+    <!---------------------------------------------------------------------------------------------->
+
+
+    <!---------------------------------------------------------------------------------------------->
+    <!--------------------------------------- Products Started  ------------------------------------>
+    <!---------------------------------------------------------------------------------------------->
+
+    <div class="main-container-product">
+        <div class="product-container">
+
+            <!--------------------------------- 1st Row --------------------------------->
+            <div class="product">
+                <img src="./assets/boot4.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Boot</p>
+                    <span class="statement">Price : $ <span class="price">70</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./assets/boot1.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Boot</p>
+                    <span class="statement">Price : $ <span class="price">70</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./assets/headphone1.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Audio Accessory</p>
+                    <span class="statement">Price : $ <span class="price">35</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./assets/watch1.jpeg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Watch</p>
+                    <span class="statement">Price : $ <span class="price">150</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!--------------------------------- 1st Row --------------------------------->
+            <!--------------------------------- 2nd Row --------------------------------->     
+            <div class="product">
+                <img src="./assets/headphone2.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Audio Accessory</p>
+                    <span class="statement">Price : $ <span class="price">35</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./assets/headphone4.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Audio Accessory</p>
+                    <span class="statement">Price : $ <span class="price">35</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./assets/watch2.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Watch</p>
+                    <span class="statement">Price : $ <span class="price">150</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./assets/sneaker2.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Sneakers</p>
+                    <span class="statement">Price : $ <span class="price">120</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!--------------------------------- 2nd Row --------------------------------->
+            <!--------------------------------- 3rd Row --------------------------------->
+            <div class="product">
+                <img src="./assets/watch4.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Watch</p>
+                    <span class="statement">Price : $ <span class="price">150</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./assets/headphone3.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Audio Accessory</p>
+                    <span class="statement">Price : $ <span class="price">35</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./assets/watch3.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Watch</p>
+                    <span class="statement">Price : $ <span class="price">150</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./assets/boot3.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Boot</p>
+                    <span class="statement">Price : $ <span class="price">70</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>   
+            <!--------------------------------- 3rd Row --------------------------------->
+            <!--------------------------------- 4th Row --------------------------------->
+            <div class="product">
+                <img src="./assets/sneaker1.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Sneakers</p>
+                    <span class="statement">Price : $ <span class="price">120</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./assets/sneaker4.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Sneakers</p>
+                    <span class="statement">Price : $ <span class="price">120</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>  
+                
+            <div class="product">
+                <img src="./assets/boot2.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Boot</p>
+                    <span class="statement">Price : $ <span class="price">70</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./assets/sneaker3.jpg" alt="" class="product-img">
+                <div class="details">
+                    <p class="category">Category : Sneakers</p>
+                    <span class="statement">Price : $ <span class="price">120</span></span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!--------------------------------- 4th Row --------------------------------->
+        </div>
+        <button class="see-more-btn">
+            See More
+        </button>
+    </div>
+
+    <!---------------------------------------------------------------------------------------------->
+    <!--------------------------------------- Products Completed  ---------------------------------->
+    <!---------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
