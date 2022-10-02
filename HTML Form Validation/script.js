@@ -34,3 +34,20 @@ const checkNumber = (field) => {
         errorTag.append(' Number Not allowed')
     }
 }
+
+
+let labels = document.getElementsByClassName('Label');
+console.log(labels);
+let credentails = document.getElementById('credentials')
+
+
+Array.from(labels).forEach((label) => {
+    let exactInput = label.nextElementSibling;
+    exactInput.addEventListener('focus' , () => {
+        label.classList.add('upper');
+    })
+
+    exactInput.addEventListener('blur' , () => {
+        label.classList.remove('upper');
+    })
+})
