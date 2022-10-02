@@ -1,53 +1,33 @@
-let userName = document.getElementById('userName')
-let errorTag = document.getElementById('errorTag')
-let submit = document.getElementById('submit')
-console.log(submit);
-userName.addEventListener('input' , (e) => {
-    checkLength(userName , 3 , 15);
-    checkNumber(userName);
+let labels = document.getElementsByClassName('Label');
+let credentails = document.getElementById('credentials')
+let userName =document.getElementById('userName');
+let userNameError =document.getElementById('username-error-msg');
+
+// Username Validation
+
+userName.addEventListener('blur' , () => {
+    checkLength(userName , 3 , 12);
 })
 
-const checkLength = (field , min , max) => {
-    const text = field.value.trim();
-    const textLength = text.length;
-    console.log(textLength);
-    if(textLength > max){
-        errorTag.classList.add('error')
-        errorTag.innerText = "UserName must be Less Than 15 characters"
-    }
-    if(textLength < min){
-        errorTag.classList.add('error')
-        errorTag.innerText = "UserName must be Greater Than 03 characters"
-    }
-    if(textLength >= min && textLength <= max){
-        errorTag.classList.add('success')
-        errorTag.innerText = "UserName Available"
+let checkLength = (field , min , max) => {
+    let text = field.value.trim();
+    if(text === ''){
+        userNameError.classList.add('error');
+        userNameError.innerText = "Error"
     }
 }
 
-const checkNumber = (field) => {
-    const text = field.value.trim();
-    let access = ((/[0-9]/).test(text));
-    console.log(access);
-    if(access){
-        errorTag.classList.add('error');
-        errorTag.append(' Number Not allowed')
-    }
-}
-
-
-let labels = document.getElementsByClassName('Label');
-console.log(labels);
-let credentails = document.getElementById('credentials')
+// Input Animation
 
 
 Array.from(labels).forEach((label) => {
     let exactInput = label.nextElementSibling;
     exactInput.addEventListener('focus' , () => {
+        label.classList.remove('lower');
         label.classList.add('upper');
     })
 
     exactInput.addEventListener('blur' , () => {
-        label.classList.add('upper');
+        label.classList.add('lower');
     })
 })
