@@ -25,6 +25,11 @@
     border: 2px solid #171717;
 }
 
+.main-container .left-panel{
+    background-color: rgb(0, 0, 0);
+    clip-path: ellipse(100% 100% at 0px 0px);
+}
+
 .main-container .left-panel , .main-container .right-panel{
     display: flex;
     align-items: center;
@@ -34,7 +39,8 @@
 
 .main-container .left-panel img{
     position: relative;
-    top: -50px;
+    top: -100px;
+    left: -50px;
     width: 70%;
 }
 
@@ -49,21 +55,20 @@
 /************************************************ *******************************/
 
 
-
 .right-panel .container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 90%;
-    height: 100vh;
+    height: 80vh;
 }
 
 /* Heading */
 
 .right-panel .container .main-heading{
-    color: var(--secondary);
     font-size: 35px;
+    font-weight: bolder;
     text-align: center;
-    color: var(--svg-color);
 }
 
 /* Credentials */
@@ -124,18 +129,29 @@
 /* Submit Button */
 
 .right-panel .container .submit{
+    border: 0;
     margin-top: 5px;
     align-self: center;
     padding: 10px 35px;
     background-color: var(--secondary);
     color: aliceblue;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+.right-panel .container .submit:hover{
+    transform: scale(1.04);
+    background-color: var(--svg-color);
+}
+
+.right-panel .container .submit:active{
+    transform: scale(1);
 }
 
 /* Horizontal Line */
 
 .horizontal-line{
-    width: 80%;
+    width: 60%;
     margin: 40px auto 0 auto;
     z-index: 2;
 }
@@ -162,34 +178,82 @@
 
 .right-panel .container .secondary-login{
     width: 70%;
-    margin: 10px auto;
-    border: 2px solid #3f3d56;
+    margin: 0 auto;
 }    
 
 /* Secondary Heading */
 
 .right-panel .container .secondary-login .secondary-heading{
     text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: var(--primary);
+}
+
+/* Social Media */
+
+.right-panel .container .secondary-login .social-media{
+    width: 80%;
+    margin: 15px auto 5px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Buttons */
+.social-media #facebook , .social-media #google{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    height: 40px;
+    background-color: white;
+    width: 150px;
+    border: none;
+    padding: 0 30px 0 20px;
+    cursor: pointer;
+}
+
+/* Facebook container */
+.social-media #facebook{
+    background-color: #3a559f;
+    color: white;
+    font-weight: bolder;
+}
+
+/* Google container */
+
+.social-media #google{
+    color: var(--secondary);
+    font-size: 15px;
+    font-weight: bolder;
+    border: 1px solid var(--secondary);
+}
+
+/* Google img */
+.social-media #google img{
+    height: 80%;
+}
+
+/* Both images */
+.social-media button img{
+    height: 100%;
+}
+
+/* Text of Both Containers */
+.social-media button span{
+    margin-left: 5px;
+    width: fit-content;
 }
 
 
+/* Already have an Account Div */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.right-panel .container .sign-up{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
 
 
 
