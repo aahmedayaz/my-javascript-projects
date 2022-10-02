@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ethereum Wallet</title>
+</head>
+<body>
+    <div class="main-container" id="main-container">
+        <div class="left-panel" id="left-panel">
+            <img src="./assets/left-img.svg" alt="">
+        </div>
+        <div class="right-panel" id="right-panel">
+            <div class="container">
+                <h1 class="main-heading">Create Your Ethereum Wallet</h1>
+                <div class="credentials">
+                    <div class="username-container">
+                        <label for="userName" id="Label">Username</label>
+                        <input type="text" id="userName">
+                        <small id="username-error-msg">&#10006; Error</small>
+                    </div>
+                    <div class="email-container">
+                        <label for="email" id="Label">Email</label>
+                        <input type="email" id="email">
+                        <small id="email-error-msg">&#10006; Error</small>
+                    </div>
+                    <div class="pin-container">
+                        <label for="pin" id="Label">PIN</label>
+                        <input type="password" id="pin">
+                        <small id="pin-error-msg">&#10006; Error</small>
+                    </div>
+                </div>
+                <button class="submit" id="submit">Submit</button>
+                <hr class="horizontal-line">
+                <div class="or">OR</div>
+                <div class="secondary-login">
+                    <h2 class="secondary-heading">Sign Up Using</h2>
+                    <div class="social-media">
+                        <button id="facebook">
+                            <img src="./assets/facebook.png" alt="">Facebook
+                        <button>
+                        <button id="google">
+                            <img src="./assets/google.png" alt="">Google
+                        </button>
+                    </div>
+                </div>
+                <div class="sign-up">
+                    <span>Already have an account ?</span>
+                    <span><a href="#">Log in</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <input type="text" id="userName">
+    <small id="errorTag" class="errorTag"></small>
+    <button id="submit">Submit</button> -->
+    <!-- <script src="./script.js"></script> -->
+</body>
+</html>
